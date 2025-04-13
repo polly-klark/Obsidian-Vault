@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Base/Полезные ссылки.md",
-                "mode": "source",
+                "file": "Base/HTB/Безопасность Windows.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Полезные ссылки"
+              "title": "Безопасность Windows"
             }
           }
         ]
@@ -196,6 +196,11 @@
   },
   "active": "8ddfec36ecd6d9f0",
   "lastOpenFiles": [
+    "Base/Полезные ссылки.md",
+    "Base/HTB/Безопасность Windows.md",
+    "Base/HTB/Desktop Experience по сравнению с Server Core.md",
+    "Base/HTB/Подсистема Windows для Linux (WSL).md",
+    "Base/HTB/Консоль управления Microsoft (MMC).md",
     "Base/HTB/Инструментарий управления Windows (WMI).md",
     "Templates",
     "Daily",
@@ -221,10 +226,6 @@
     "Base/HTB/Управление файловой системой.md",
     "Base/HTB/Управление службами и процессами.md",
     "Base/HTB/Управление разрешениями.md",
-    "Base/HTB/Управление пользователями.md",
-    "Base/HTB/Управление пакетами.md",
-    "Base/HTB/Структура Linux.md",
-    "Base/HTB/Содержимое фильтра.md",
     "Base/KL",
     "Attachments/Pasted image 20250323212606.png",
     "Attachments/Pasted image 20250323212550.png",
