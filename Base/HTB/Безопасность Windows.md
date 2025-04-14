@@ -287,7 +287,7 @@ RealTimeProtectionEnabled       : True
 
 powershell
 
-`$objUser = New-Object System.Security.Principal.NTAccount("bob.smith") $strSID = $objUser.Translate([System.Security.Principal.SecurityIdentifier]) $strSID.Value`
+`$objUser = New-Object System.Security.Principal.NTAccount("Jim") $strSID = $objUser.Translate([System.Security.Principal.SecurityIdentifier]) $strSID.Value`
 
 ## Объяснение команд:
 
