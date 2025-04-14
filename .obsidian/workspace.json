@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Base/HTB/Введение в Windows cmd.md",
-                "mode": "source",
+                "file": "Base/HTB/Основы командной строки.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Введение в Windows cmd"
+              "title": "Основы командной строки"
             }
           }
         ]
@@ -196,11 +196,12 @@
   },
   "active": "5d75ee5198601d3a",
   "lastOpenFiles": [
-    "Base/HTB/Взаимодействие с операционной системой Windows.md",
+    "Base/HTB/Введение в Windows cmd.md",
+    "Base/HTB/Основы командной строки.md",
     "Base/HTB/Шпаргалка Командная строка Windows.md",
+    "Base/HTB/Взаимодействие с операционной системой Windows.md",
     "Base/HTB/Шпаргалка Windows.md",
     "Base/HTB/Шпаргалка Linux.md",
-    "Base/HTB/Введение в Windows cmd.md",
     "Base/HTB/Оценка навыков - Основы Windows.md",
     "Base/HTB/Безопасность Windows.md",
     "Base/Полезные ссылки.md",
@@ -225,7 +226,6 @@
     "Base/HTB/Настройка брандмауэра.md",
     "Base/HTB/Практика по iptables.md",
     "Base/HTB/Безопасность Linux.md",
-    "Base/HTB/Файловые дескрипторы и перенаправления.md",
     "Base/KL",
     "Attachments/Pasted image 20250323212606.png",
     "Attachments/Pasted image 20250323212550.png",

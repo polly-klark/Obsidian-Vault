@@ -1,4 +1,4 @@
-#windows #cmd #htb 
+#windows #cmd #powershell #htb 
 
 #####   Cheat Sheet
 
