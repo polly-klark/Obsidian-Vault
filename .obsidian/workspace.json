@@ -11,10 +11,14 @@
             "id": "5d75ee5198601d3a",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Base/HTB/Введение в Windows cmd.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Новая вкладка"
+              "title": "Введение в Windows cmd"
             }
           }
         ]
@@ -49,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#htb_practise",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -192,9 +196,11 @@
   },
   "active": "5d75ee5198601d3a",
   "lastOpenFiles": [
-    "Base/HTB/Шпаргалка Linux.md",
-    "Base/HTB/Шпаргалка Windows.md",
+    "Base/HTB/Взаимодействие с операционной системой Windows.md",
     "Base/HTB/Шпаргалка Командная строка Windows.md",
+    "Base/HTB/Шпаргалка Windows.md",
+    "Base/HTB/Шпаргалка Linux.md",
+    "Base/HTB/Введение в Windows cmd.md",
     "Base/HTB/Оценка навыков - Основы Windows.md",
     "Base/HTB/Безопасность Windows.md",
     "Base/Полезные ссылки.md",
@@ -204,7 +210,6 @@
     "Base/HTB/Инструментарий управления Windows (WMI).md",
     "Templates",
     "Daily",
-    "Base/HTB/Взаимодействие с операционной системой Windows.md",
     "Base/HTB/Сеансы Windows.md",
     "Base/HTB/Разрешения служб.md",
     "Base/HTB/Службы и процессы Windows.md",
@@ -221,7 +226,6 @@
     "Base/HTB/Практика по iptables.md",
     "Base/HTB/Безопасность Linux.md",
     "Base/HTB/Файловые дескрипторы и перенаправления.md",
-    "Base/HTB/Управление файловой системой.md",
     "Base/KL",
     "Attachments/Pasted image 20250323212606.png",
     "Attachments/Pasted image 20250323212550.png",
