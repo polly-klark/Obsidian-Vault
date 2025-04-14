@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Base/HTB/Безопасность Windows.md",
+                "file": "Base/HTB/Оценка навыков - Основы Windows.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Безопасность Windows"
+              "title": "Оценка навыков - Основы Windows"
             }
           }
         ]
@@ -196,8 +196,9 @@
   },
   "active": "8ddfec36ecd6d9f0",
   "lastOpenFiles": [
-    "Base/Полезные ссылки.md",
     "Base/HTB/Безопасность Windows.md",
+    "Base/HTB/Оценка навыков - Основы Windows.md",
+    "Base/Полезные ссылки.md",
     "Base/HTB/Desktop Experience по сравнению с Server Core.md",
     "Base/HTB/Подсистема Windows для Linux (WSL).md",
     "Base/HTB/Консоль управления Microsoft (MMC).md",
@@ -225,7 +226,6 @@
     "Base/HTB/Файловые дескрипторы и перенаправления.md",
     "Base/HTB/Управление файловой системой.md",
     "Base/HTB/Управление службами и процессами.md",
-    "Base/HTB/Управление разрешениями.md",
     "Base/KL",
     "Attachments/Pasted image 20250323212606.png",
     "Attachments/Pasted image 20250323212550.png",
