@@ -1,4 +1,4 @@
-#network #htb 
+#network #htb #TCP 
 
 `TCP/IP`-модель также является многоуровневой эталонной моделью, которую часто называют `Internet Protocol Suite`. Термин `TCP/IP` обозначает два протокола `Transmission Control Protocol` (`TCP`) и `Internet Protocol` (`IP`). `IP` находится в `network layer` (`Layer 3`), а `TCP` — в `transport layer` (`Layer 4`) модели `OSI`-уровня.
 
