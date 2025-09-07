@@ -47,23 +47,23 @@ PowerShell и CMD изначально включены в любую верси
 
 Мы можем ввести `PowerShell` в поиске Windows, чтобы найти и запустить приложение PowerShell и командную консоль.
 
-![GIF, демонстрирующий функциональность поиска и открывающий PowerShell.](https://academy.hackthebox.com/storage/modules/167/SearchingForPowerShell.gif)
+![[SearchingForPowerShell.webp]]
 
 2. Использование приложения Windows `Terminal`
 
-[Windows Terminal](https://github.com/Microsoft/Terminal) — это новое приложение-эмулятор терминала, разработанное Microsoft, которое позволяет любому пользователю командной строки Windows получить доступ к нескольким различным интерфейсам командной строки, системам и подсистемам с помощью одного приложения. Это приложение, скорее всего, станет эмулятором терминала по умолчанию в операционных системах Windows. ![GIF, демонстрирующий терминал и переключение между PowerShell и командной строкой.](https://academy.hackthebox.com/storage/modules/167/PowerShellinWindowsTerminal.gif)
+[Windows Terminal](https://github.com/Microsoft/Terminal) — это новое приложение-эмулятор терминала, разработанное Microsoft, которое позволяет любому пользователю командной строки Windows получить доступ к нескольким различным интерфейсам командной строки, системам и подсистемам с помощью одного приложения. Это приложение, скорее всего, станет эмулятором терминала по умолчанию в операционных системах Windows. ![[PowerShellinWindowsTerminal.gif]]
 
 3. Использование Windows `PowerShell ISE`
 
 [Интегрированная среда сценариев Windows PowerShell (ISE)](https://docs.microsoft.com/en-us/powershell/scripting/windows-powershell/ise/introducing-the-windows-powershell-ise?view=powershell-7.2) похожа на IDE для PowerShell. Она может упростить разработку, отладку и тестирование создаваемых нами сценариев PowerShell. Использование PowerShell ISE может быть невероятно полезным при изучении PowerShell.
 
-![GIF, демонстрирующий запуск Windows PowerShell ISE с помощью функции поиска.](https://academy.hackthebox.com/storage/modules/167/PowerShellISE.gif)
+![[PowerShellISE.gif]]
 
 4. Использование PowerShell в `CMD`
 
 Мы также можем запустить PowerShell из командной строки. Это действие может показаться простым, но, несомненно, наступит момент, когда мы сможем получить доступ к командной строке уязвимой целевой системы Windows через командную строку и воспользуемся PowerShell для расширения доступа к хосту и сети.
 
-![GIF-изображение, демонстрирующее командную строку и запуск PowerShell с помощью команды powershell.exe.](https://academy.hackthebox.com/storage/modules/167/LaunchingPowerShellfromCMD.gif)
+![[LaunchingPowerShellfromCMD.gif]]
 
 ### Взглянув на Оболочку
 
@@ -128,7 +128,7 @@ REMARKS
 
 Get-Help может предоставить полезную информацию о командлете. Обратите внимание, что в выводе `Syntax` показаны несколько доступных параметров и дополнительные ключевые слова, которые можно использовать с каждым параметром. `Aliases` Также упоминаются псевдонимы, то есть более короткие названия наших команд. Мы подробнее обсудим псевдонимы позже в этом разделе. В выводе `Remarks` содержится дополнительная информация о командлете и даже дополнительные параметры, которые мы можем использовать, чтобы узнать больше о командлете. Один из таких дополнительных параметров — `-online`, который откроет веб-страницу с документацией Microsoft по соответствующему командлету, если у хоста есть доступ в Интернет.
 
-![GIF-изображение терминала PowerShell и использования команды Get-Help Online.](https://academy.hackthebox.com/storage/modules/167/GetHelpOnline.gif)
+![[GetHelpOnline.gif]]
 
 Мы также можем использовать полезный командлет [Update-Help](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/update-help?view=powershell-7.2), чтобы получать самую актуальную информацию о каждом командлете в системе Windows.
 
@@ -468,7 +468,7 @@ Get-ExecutionPolicy
 
 #### Пример автозаполнения
 
-![GIF, демонстрирующий функциональность автозаполнения в окне PowerShell.](https://academy.hackthebox.com/storage/modules/167/tab.gif)
+![[tab.gif]]
 
 ### Псевдонимы
 
@@ -517,7 +517,7 @@ Alias           dir -> Get-ChildItem
 
 Отличной практикой является сокращение псевдонимов до имени фактического командлета, команды или исполняемого файла. Даже у `Get-Alias` командлета по умолчанию есть псевдоним `gal`, как показано в ролике ниже.
 
-![GIF-файл, демонстрирующий псевдоним Gal (gal) в окне PowerShell.](https://academy.hackthebox.com/storage/modules/167/GalAlias.gif)
+![[GalAlias.gif]]
 
 Мы также можем создать псевдоним для определённого командлета с помощью [Set-Alias](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/set-alias?view=powershell-7.2). Давайте потренируемся, создав псевдоним для командлета `Get-Help`
 
@@ -531,7 +531,7 @@ PS C:\Windows\system32> Set-Alias -Name gh -Value Get-Help
 
 При использовании `Set-Alias` необходимо указать имя псевдонима (`-Name gh`) и соответствующий командлет (`-Value Get-Help`).
 
-![GIF, демонстрирующий команду Set-Alias в окне PowerShell.](https://academy.hackthebox.com/storage/modules/167/SetAlias.gif)
+![[SetAlias.gif]]
 
 Ниже мы также приводим список нескольких псевдонимов, которые, по нашему мнению, наиболее полезны. У некоторых команд есть несколько псевдонимов. Обязательно ознакомьтесь с полным списком, чтобы найти другие псевдонимы, которые могут вам пригодиться.
 

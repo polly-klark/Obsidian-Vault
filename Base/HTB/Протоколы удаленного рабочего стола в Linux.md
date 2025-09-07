@@ -41,7 +41,7 @@ htb-student@10.129.14.130's password: ********
 <SKIP>
 ```
 
-![Окно терминала с пользователем «htb-student@NIX02», выполняющим команду «ssh -X htb-student@10.129.2.210 /usr/bin/firefox». Открыто окно браузера Firefox с новой вкладкой.](https://academy.hackthebox.com/storage/modules/18/xserver.png)
+![[Pasted image 20250907170931.png]]
 
 #### Безопасность X11
 
@@ -204,4 +204,4 @@ Using default colormap which is TrueColor.  Pixel format:
 Same machine: preferring raw encoding
 ```
 
-![На рабочем столе отображается окно терминала, в котором пользователь «htb-student@linux» выполняет команду «id». На выходе отображается идентификатор пользователя, идентификатор группы и принадлежность к группам.](https://academy.hackthebox.com/storage/modules/18/vncviewer.png)
+![[Pasted image 20250907170943.png]]

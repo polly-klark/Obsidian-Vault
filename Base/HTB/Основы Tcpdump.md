@@ -238,7 +238,7 @@ tcpdump: listening on eth0, link-type EN10MB (Ethernet), snapshot length 262144 
 
 #### Поломка оболочки Tcpdump
 
-![Сниффер сетевых пакетов, показывающий обмен данными по протоколу FTP между IP-адресами 172.16.146.2 и 172.16.146.1, включая приветственное сообщение и запрос пароля.](https://academy.hackthebox.com/storage/modules/81/breakdown.png)
+![[Pasted image 20250907175817.png]]
 
 |**Фильтр**|**Результат**|
 |---|---|
