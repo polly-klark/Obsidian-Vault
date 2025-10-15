@@ -1,0 +1,65 @@
+{
+  "collapse-filter": false,
+  "search": "",
+  "showTags": true,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "tag:#windows  ",
+      "color": {
+        "a": 1,
+        "rgb": 565751
+      }
+    },
+    {
+      "query": "tag:#linux  ",
+      "color": {
+        "a": 1,
+        "rgb": 10546951
+      }
+    },
+    {
+      "query": "tag:#perplexity  ",
+      "color": {
+        "a": 1,
+        "rgb": 3778741
+      }
+    },
+    {
+      "query": "tag:#forensic  ",
+      "color": {
+        "a": 1,
+        "rgb": 7630249
+      }
+    },
+    {
+      "query": "tag:#python  ",
+      "color": {
+        "a": 1,
+        "rgb": 16503879
+      }
+    },
+    {
+      "query": "tag:#network  ",
+      "color": {
+        "a": 1,
+        "rgb": 96623
+      }
+    }
+  ],
+  "collapse-display": true,
+  "showArrow": false,
+  "textFadeMultiplier": 0,
+  "nodeSizeMultiplier": 1,
+  "lineSizeMultiplier": 1,
+  "collapse-forces": true,
+  "centerStrength": 0.518713248970312,
+  "repelStrength": 10,
+  "linkStrength": 1,
+  "linkDistance": 250,
+  "scale": 0.08779149519890256,
+  "close": true
+}

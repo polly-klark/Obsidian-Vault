@@ -1,0 +1,9 @@
+{
+  "promptDelete": false,
+  "alwaysUpdateLinks": true,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "Base",
+  "showUnsupportedFiles": true,
+  "attachmentFolderPath": "Attachments",
+  "spellcheck": false
+}
