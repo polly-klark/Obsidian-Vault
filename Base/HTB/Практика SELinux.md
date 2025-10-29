@@ -1,4 +1,4 @@
-#htb_practiсe #linux
+#htb_practiсe #linux #htb 
 
 ## Настройка SELinux на Виртуальной Машины
 
