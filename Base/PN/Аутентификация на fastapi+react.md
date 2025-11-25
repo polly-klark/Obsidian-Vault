@@ -106,6 +106,7 @@ async def login(form_data: OAuth2PasswordRequestForm = Depends()):
 @app.get("/admin") 
 async def read_admin_data(current_user: UserInDB = Depends(role_checker("admin"))): 
 	return {"message": "This is admin data."} 
+
 @app.get("/user") 
 async def read_user_data(current_user: UserInDB = 
 Depends(role_checker("user"))): 
@@ -147,24 +148,92 @@ const Login = ({ setToken }) => {
 	}; 
 	
 	return (
+		<form onSumbit={hendleSumbit}>
+			input type="text" value={username} onChange={(e) => setUsername(e.target.value)} placeholder="Username" />
+			input type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Password" />
+			<button type="sumbit">Login</button>
+		</form>
+	); 
+}; 
 
+export default Login; 
 ```
 
 ## Компонент для отображения данных ( `Dashboard.js` ):
 
+```
+import React from 'react'; 
+import axios from 'axios';
+ 
+const Dashboard = ({ token }) => { 
+	const [data, setData] = React.useState(null);
+	
+	const fetchData = async (role) => { 
+			const response = await axios.get(`http://localhost:8000/${role}`, {
+				headers: { Authorization: `Bearer ${token}` }, 
+			});
+			
+			setData(response.data); 
+		}; 
+		
+	return (
+		<div>
+			<button onClick={() => fetchData('admin')}>Get Admin Data</button>
+			<button onClick={() => fetchData('user')}>Get User Data</button>
+			{data && <div>{JSON.stringify(data)}</div>
+		</div>
+	); 
+}; 
 
- setUsername(e.target.value)} placeholder="Username" />  setPassword(e.target.value)} placeholder="Password" /> Login
+export default Dashboard;
+```
 
-); }; export default Login; import React from 'react'; import axios from 'axios'; const Dashboard = ({ token }) => { const [data, setData] = React.useState(null); const fetchData = async (role) => { const response = await axios.get(`http://localhost:8000/${role}`, { headers: { Authorization: `Bearer ${token}` }, }); setData(response.data); }; Основной компонент приложения ( App.js ): Запуск приложения Теперь вы можете войти в систему через компонент Login , а затем получать данные в зависимости от роли пользователя через компонент Dashboard . Этот пример return (
+## Основной компонент приложения (`App.js`):
 
-fetchData('admin')}>Get Admin Data fetchData('user')}>Get User Data {data &&
+```
+import React, { useState } from 'react'; 
+import Login from './Login'; 
+import Dashboard from './Dashboard'; 
 
-{JSON.stringify(data)}
+const App = () => { 
+	const [token, setToken] = useState(''); 
+	
+	return (
+		<div>
+			{!token ? ( 
+				<Login setToken={setToken} />
+			) : ( 
+				<Dashboard token={token} />
+			)}
+		</div>
+	); 
+}; 
 
-}
+export default App; 
+```
 
-); }; export default Dashboard; import React, { useState } from 'react'; import Login from './Login'; import Dashboard from './Dashboard'; const App = () => { const [token, setToken] = useState(''); return (
+## Запуск приложения
 
-{!token ? ( ) : ( )}
+1. Запустите сервер FastAPI: 
 
-); }; export default App; 1. Запустите сервер FastAPI: uvicorn main:app --reload 2. Запустите приложение React: npm start демонстрирует базовую реализацию разграничения доступа с использованием FastAPI и React. Citations: [1] https://github.com/amisadmin/fastapi-user-auth [2] https://www.youtube.com/watch?v=_k2M-LpxId8 [3] https://developer.auth0.com/resources/code-samples/api/fastapi/basic-role-basedaccess-control [4] https://stackademic.com/blog/fastapi-role-base-access-control-with-jwt-9fa2922a088c [5] https://dev.to/mochafreddo/building-a-modern-user-permission-management-system-withfastapi-sqlalchemy-and-mariadb-5fp1 [6] https://dev.to/moadennagi/role-based-access-control-using-fastapi-h59 [7] https://www.permit.io/blog/implement-authorization-in-fastapi [8] https://www.freecodecamp.org/news/how-to-add-jwt-authentication-in-fastapi/
+```
+uvicorn main:app --reload
+```
+ 
+2. Запустите приложение React: 
+
+```
+npm start
+```
+
+Теперь вы можете войти в систему через компонент `Login`, а затем получать данные в зависимости от роли пользователя через компонент `Dashboard`. Этот пример демонстрирует базовую реализацию разграничения доступа с использованием FastAPI и React.
+
+Citations: 
+[1] https://github.com/amisadmin/fastapi-user-auth 
+[2] https://www.youtube.com/watch?v=_k2M-LpxId8 
+[3] https://developer.auth0.com/resources/code-samples/api/fastapi/basic-role-basedaccess-control 
+[4] https://stackademic.com/blog/fastapi-role-base-access-control-with-jwt-9fa2922a088c 
+[5] https://dev.to/mochafreddo/building-a-modern-user-permission-management-system-withfastapi-sqlalchemy-and-mariadb-5fp1 
+[6] https://dev.to/moadennagi/role-based-access-control-using-fastapi-h59 
+[7] https://www.permit.io/blog/implement-authorization-in-fastapi 
+[8] https://www.freecodecamp.org/news/how-to-add-jwt-authentication-in-fastapi/
