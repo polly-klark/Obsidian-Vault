@@ -39,11 +39,11 @@
 
 #### Пользователи для добавления:
 
-|**Пользователь**|
-|---|
-|`Andromeda Cepheus`|
-|`Orion Starchaser`|
-|`Artemis Callisto`|
+| **Пользователь**    |
+| ------------------- |
+| `Andromeda Cepheus` |
+| `Orion Starchaser`  |
+| `Artemis Callisto`  |
 
 У каждого пользователя должны быть указаны следующие атрибуты, а также имя:
 
@@ -120,7 +120,7 @@ PS C:\htb> New-ADUser -Name "Orion Starchaser" -Accountpassword (ConvertTo-Secur
 
 ---
 
-Чтобы `REMOVE` создать учётную запись пользователя в Active Directory, мы можем:
+Чтобы `REMOVE` созданную учётную запись пользователя в Active Directory, мы можем:
 
 #### PowerShell для удаления пользователя
 
